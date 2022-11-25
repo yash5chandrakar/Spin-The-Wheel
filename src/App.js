@@ -6,7 +6,7 @@ import TryLuckPage from './components/tryLuckPage';
 
 function App() {
 
-  const [status, setStatus] = useState("phase1")
+  const [status, setStatus] = useState("phase2")
   const [offer, setOffer] = useState("")
   const [state, setState] = useState(false)
 
@@ -65,9 +65,12 @@ function App() {
     else if (num >= 11 && num < 12) {
       setOffer("35")
     }
-    else if (num >= 12 && num < 1) {
+    else {
       setOffer("50")
     }
+    // else if (num >= 12 && num < 1) {
+    //   setOffer("50")
+    // }
     setStatus("phase3")
   }
 
