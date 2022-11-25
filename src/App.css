@@ -38,7 +38,6 @@
 
 .wheel {
   width: 80%;
-  padding: 0.5vw;
 }
 
 .textContent {
@@ -279,6 +278,46 @@ li {
   padding: 0.8vw;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .innerContent {
+    display: block;
+  }
+
+  .circle {
+    width: 45vw;
+    height: 45vw;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    padding: 0;
+    margin: 1em auto;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  .arrow {
+    height: 0;
+    width: 0;
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-top: 5vw solid black;
+    position: relative;
+    left: 50%;
+    top: -20vw;
+    z-index: 11;
+  }
+
+  .theWheel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wheel {
+    width: 100%;
+  }
 }
 
 /* 
