@@ -6,7 +6,7 @@ import TryLuckPage from './components/tryLuckPage';
 
 function App() {
 
-  const [status, setStatus] = useState("phase2")
+  const [status, setStatus] = useState("phase1")
   const [offer, setOffer] = useState("")
   const [state, setState] = useState(false)
 
